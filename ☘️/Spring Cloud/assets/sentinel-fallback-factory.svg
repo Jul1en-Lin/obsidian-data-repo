@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#e7dfd4" flood-opacity="0.9"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#FEFCF8" rx="24"/>
+<rect x="38" y="28" width="102" height="30" rx="8" fill="#E8C79A" transform="rotate(-16 89 43)" opacity="0.9"/>
+<rect x="98" y="102" width="270" height="16" rx="8" fill="#F5E2A8" opacity="0.85"/>
+<text x="92" y="88" font-size="34" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Chapter</text>
+<text x="232" y="88" font-size="38" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Fallback</text>
+<text x="92" y="170" font-size="62" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Fallback 与 FallbackFactory</text>
+<text x="92" y="226" font-size="28" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">熔断后不是把异常直接甩出去，而是要有业务层面的兜底结果</text>
+<path d="M 70 248 H 1490" stroke="#9B7C4D" stroke-width="3" stroke-dasharray="16 12" fill="none"/>
+<circle cx="1496" cy="84" r="26" fill="#fff" stroke="#2A2724" stroke-width="3"/>
+<circle cx="1486" cy="84" r="3.5" fill="#111111"/>
+<circle cx="1506" cy="84" r="3.5" fill="#111111"/>
+<path d="M1479 96 Q1496 108 1513 96" stroke="#111111" stroke-width="3" fill="none" stroke-linecap="round"/>
+<g filter="url(#shadow)">
+<rect x="90" y="320" width="300" height="500" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="134" cy="364" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="124" y="375" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">1</text>
+<text x="174" y="380" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">调用方</text>
+<text x="126" y="430" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">例如订单服务</text>
+<text x="126" y="468" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">通过 Feign 调用户服务</text><g filter="url(#shadow)">
+<rect x="470" y="320" width="300" height="500" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="514" cy="364" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="504" y="375" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">2</text>
+<text x="554" y="380" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">下游服务</text>
+<text x="506" y="430" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">正常时返回真实结果</text>
+<text x="506" y="468" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">异常时可能超时、报错、熔断</text><g filter="url(#shadow)">
+<rect x="850" y="320" width="300" height="500" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="894" cy="364" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="884" y="375" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">3</text>
+<text x="934" y="380" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Fallback</text>
+<text x="886" y="430" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">有默认兜底结果</text>
+<text x="886" y="468" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">但拿不到异常细节</text><g filter="url(#shadow)">
+<rect x="1230" y="320" width="300" height="500" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="1274" cy="364" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="1264" y="375" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">4</text>
+<text x="1314" y="380" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">FallbackFactory</text>
+<text x="1266" y="430" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">不仅能兜底</text>
+<text x="1266" y="468" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">还能拿到 Throwable 原因</text>
+<text x="1266" y="506" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">更适合排查和定制返回</text><path d="M 390 560 C 430.0 560, 430.0 560, 470 560" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 452 550 L 470 560 L 452 570" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="360.0" y="540.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="378.0" y="564.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">发起调用</text><path d="M 770 560 C 810.0 560, 810.0 560, 850 560" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 832 550 L 850 560 L 832 570" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="740.0" y="540.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="758.0" y="564.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">失败后</text><path d="M 1150 560 C 1190.0 560, 1190.0 560, 1230 560" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 1212 550 L 1230 560 L 1212 570" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="1120.0" y="540.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="1138.0" y="564.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">想拿异常</text>
+<g filter="url(#shadow)">
+  <path d="M 530 1000 H 1070 L 1100 1026 L 1070 1054 H 530 L 500 1026 Z" fill="#f7e7b5" stroke="#2A2724" stroke-width="3"/>
+</g>
+<text x="632" y="1038" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Fallback 解决有没有兜底，Factory 解决知不知道为什么失败</text>
+<rect x="82" y="958" width="1436" height="130" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="2.8" stroke-dasharray="10 10"/>
+<text x="150" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">远程调用失败</text>
+<path d="M 300 1032 H 390" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 374 1022 L 390 1032 L 374 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="440" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">普通 fallback</text>
+<path d="M 590 1032 H 680" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 664 1022 L 680 1032 L 664 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="730" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">拿默认结果</text>
+<path d="M 880 1032 H 970" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 954 1022 L 970 1032 L 954 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="1020" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Factory 还能看异常</text></svg>

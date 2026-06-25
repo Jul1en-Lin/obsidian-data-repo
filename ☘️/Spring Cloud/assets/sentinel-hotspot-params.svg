@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#e7dfd4" flood-opacity="0.9"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#FEFCF8" rx="24"/>
+<rect x="38" y="28" width="102" height="30" rx="8" fill="#E8C79A" transform="rotate(-16 89 43)" opacity="0.9"/>
+<rect x="98" y="102" width="270" height="16" rx="8" fill="#F5E2A8" opacity="0.85"/>
+<text x="92" y="88" font-size="34" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Chapter</text>
+<text x="232" y="88" font-size="38" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">热点参数限流</text>
+<text x="92" y="170" font-size="62" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">热点参数限流</text>
+<text x="92" y="226" font-size="28" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">危险的不一定是整个接口，而是某个参数值特别热</text>
+<path d="M 70 248 H 1490" stroke="#9B7C4D" stroke-width="3" stroke-dasharray="16 12" fill="none"/>
+<circle cx="1496" cy="84" r="26" fill="#fff" stroke="#2A2724" stroke-width="3"/>
+<circle cx="1486" cy="84" r="3.5" fill="#111111"/>
+<circle cx="1506" cy="84" r="3.5" fill="#111111"/>
+<path d="M1479 96 Q1496 108 1513 96" stroke="#111111" stroke-width="3" fill="none" stroke-linecap="round"/>
+<g filter="url(#shadow)">
+<rect x="88" y="320" width="380" height="500" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="132" cy="364" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="122" y="375" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">1</text>
+<text x="172" y="380" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">接口本身</text>
+<text x="124" y="430" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">例如商品详情接口 /goods/{id}</text>
+<text x="124" y="468" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">整体看起来访问量还正常</text>
+<text x="124" y="506" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">但不同 id 的热度差别很大</text><g filter="url(#shadow)">
+<rect x="580" y="320" width="380" height="500" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="624" cy="364" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="614" y="375" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">2</text>
+<text x="664" y="380" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">普通参数</text>
+<text x="616" y="430" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">id=1002、1003 访问平稳</text>
+<text x="616" y="468" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">按普通节奏统计与放行</text>
+<text x="616" y="506" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">不会成为系统主要风险</text><g filter="url(#shadow)">
+<rect x="1072" y="320" width="380" height="500" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="1116" cy="364" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="1106" y="375" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">3</text>
+<text x="1156" y="380" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">热点参数</text>
+<text x="1108" y="430" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">例如爆款商品 id=1001</text>
+<text x="1108" y="468" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">访问异常集中</text>
+<text x="1108" y="506" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">需要单独统计和更严格阈值</text><path d="M 468 560 C 524.0 560, 524.0 560, 580 560" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 562 550 L 580 560 L 562 570" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="454.0" y="540.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="472.0" y="564.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">参数分流</text><path d="M 960 560 C 1016.0 560, 1016.0 560, 1072 560" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 1054 550 L 1072 560 L 1054 570" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="946.0" y="540.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="964.0" y="564.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">热点保护</text><rect x="350" y="840" width="920" height="100" rx="20" fill="#fff" stroke="#2A2724" stroke-width="2.6"/>
+<rect x="368" y="858" width="180" height="34" rx="12" fill="#F5E2A8" opacity="0.72"/>
+<text x="374" y="883" font-size="26" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">一句话总结</text>
+<text x="374" y="926" font-size="22" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">普通流控盯资源整体，热点参数限流盯某个特别火的参数值。</text>
+<g filter="url(#shadow)">
+  <path d="M 530 1000 H 1070 L 1100 1026 L 1070 1054 H 530 L 500 1026 Z" fill="#f7e7b5" stroke="#2A2724" stroke-width="3"/>
+</g>
+<text x="632" y="1038" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">为什么还要有热点参数限流</text>
+<rect x="82" y="958" width="1436" height="130" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="2.8" stroke-dasharray="10 10"/>
+<text x="150" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">接口整体正常</text>
+<path d="M 300 1032 H 390" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 374 1022 L 390 1032 L 374 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="440" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">某个参数特别热</text>
+<path d="M 590 1032 H 680" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 664 1022 L 680 1032 L 664 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="730" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">单独限它</text>
+<path d="M 880 1032 H 970" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 954 1022 L 970 1032 L 954 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="1020" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">保护整个接口</text></svg>

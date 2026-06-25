@@ -1,0 +1,135 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"JavaEE进阶\"",
+      "color": {
+        "a": 1,
+        "rgb": 536681
+      }
+    },
+    {
+      "query": "path:\"JavaEE\" -path:\"JavaEE进阶\"",
+      "color": {
+        "a": 1,
+        "rgb": 7900509
+      }
+    },
+    {
+      "query": "path:\"Spring Cloud\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 15260898
+      }
+    },
+    {
+      "query": "path:\"Redis进阶\"",
+      "color": {
+        "a": 1,
+        "rgb": 8521758
+      }
+    },
+    {
+      "query": "path:\"Redis\" -path:\"Redis进阶\"",
+      "color": {
+        "a": 1,
+        "rgb": 14251863
+      }
+    },
+    {
+      "query": "path:\"MySQL\"",
+      "color": {
+        "a": 1,
+        "rgb": 12871558
+      }
+    },
+    {
+      "query": "path:\"数据结构\"",
+      "color": {
+        "a": 1,
+        "rgb": 741294
+      }
+    },
+    {
+      "query": "path:\"算法\"",
+      "color": {
+        "a": 1,
+        "rgb": 14212841
+      }
+    },
+    {
+      "query": "path:\"AI\"",
+      "color": {
+        "a": 1,
+        "rgb": 877352
+      }
+    },
+    {
+      "query": "path:\"LangChain\"",
+      "color": {
+        "a": 1,
+        "rgb": 9419963
+      }
+    },
+    {
+      "query": "path:\"Git\"",
+      "color": {
+        "a": 1,
+        "rgb": 14932683
+      }
+    },
+    {
+      "query": "path:\"测试\"",
+      "color": {
+        "a": 1,
+        "rgb": 12871558
+      }
+    },
+    {
+      "query": "path:\"项目经历\"",
+      "color": {
+        "a": 1,
+        "rgb": 8521758
+      }
+    },
+    {
+      "query": "path:\"简历\"",
+      "color": {
+        "a": 1,
+        "rgb": 3028032
+      }
+    },
+    {
+      "query": "path:\"面试\"",
+      "color": {
+        "a": 1,
+        "rgb": 15453067
+      }
+    },
+    {
+      "query": "path:通信协议  ",
+      "color": {
+        "a": 1,
+        "rgb": 8962256
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -1.4,
+  "nodeSizeMultiplier": 1.72784768211921,
+  "lineSizeMultiplier": 2.11539735099338,
+  "collapse-forces": false,
+  "centerStrength": 0.561542100283822,
+  "repelStrength": 17.6414380321665,
+  "linkStrength": 0.907048249763482,
+  "linkDistance": 192,
+  "scale": 0.29229359551167694,
+  "close": true
+}

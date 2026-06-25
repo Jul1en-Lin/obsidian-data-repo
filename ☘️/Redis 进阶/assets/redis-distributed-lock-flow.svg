@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#506784"/>
+    </marker>
+    <style>
+      .title { font: 700 26px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1f2937; }
+      .label { font: 600 17px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1f2937; }
+      .small { font: 14px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #4b5563; }
+      .box { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; rx: 14; }
+      .blue { fill: #eff6ff; stroke: #60a5fa; }
+      .green { fill: #ecfdf5; stroke: #34d399; }
+      .yellow { fill: #fffbeb; stroke: #f59e0b; }
+      .red { fill: #fff1f2; stroke: #fb7185; }
+      .line { stroke: #506784; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .dash { stroke-dasharray: 7 6; }
+    </style>
+  </defs>
+
+  <rect width="980" height="520" fill="#ffffff"/>
+  <text x="42" y="48" class="title">分布式锁关系图</text>
+  <text x="42" y="78" class="small">多个服务实例抢同一个 Redis lock key，只有拿到锁的实例继续访问共享资源。</text>
+
+  <rect x="52" y="130" width="150" height="72" class="box blue"/>
+  <text x="87" y="160" class="label">请求 A</text>
+  <text x="73" y="184" class="small">访问热点 key</text>
+
+  <rect x="52" y="250" width="150" height="72" class="box blue"/>
+  <text x="87" y="280" class="label">请求 B</text>
+  <text x="73" y="304" class="small">访问热点 key</text>
+
+  <rect x="52" y="370" width="150" height="72" class="box blue"/>
+  <text x="87" y="400" class="label">请求 C</text>
+  <text x="73" y="424" class="small">访问热点 key</text>
+
+  <rect x="300" y="120" width="170" height="84" class="box"/>
+  <text x="336" y="153" class="label">服务实例 1</text>
+  <text x="324" y="180" class="small">尝试加锁</text>
+
+  <rect x="300" y="250" width="170" height="84" class="box"/>
+  <text x="336" y="283" class="label">服务实例 2</text>
+  <text x="324" y="310" class="small">尝试加锁</text>
+
+  <rect x="300" y="380" width="170" height="84" class="box"/>
+  <text x="336" y="413" class="label">服务实例 3</text>
+  <text x="324" y="440" class="small">尝试加锁</text>
+
+  <rect x="575" y="215" width="210" height="122" class="box green"/>
+  <text x="617" y="250" class="label">Redis lock key</text>
+  <text x="600" y="278" class="small">lock:product:1001</text>
+  <text x="600" y="304" class="small">value = requestId</text>
+  <text x="600" y="328" class="small">TTL = 业务保护时间</text>
+
+  <rect x="820" y="238" width="130" height="76" class="box yellow"/>
+  <text x="847" y="270" class="label">MySQL</text>
+  <text x="839" y="294" class="small">共享资源</text>
+
+  <rect x="578" y="382" width="205" height="70" class="box red"/>
+  <text x="606" y="412" class="label">未拿到锁</text>
+  <text x="602" y="437" class="small">等待 / 直接返回</text>
+
+  <path d="M 202 166 L 300 162" class="line"/>
+  <path d="M 202 286 L 300 292" class="line"/>
+  <path d="M 202 406 L 300 422" class="line"/>
+
+  <path d="M 470 162 C 520 162 530 234 575 248" class="line"/>
+  <path d="M 470 292 L 575 276" class="line"/>
+  <path d="M 470 422 C 520 422 530 334 575 312" class="line"/>
+
+  <path d="M 785 276 L 820 276" class="line"/>
+  <text x="805" y="252" class="small">持锁者访问</text>
+
+  <path d="M 575 332 C 535 362 535 403 578 417" class="line dash"/>
+  <text x="493" y="384" class="small">抢锁失败</text>
+
+  <text x="42" y="492" class="small">注意：本地锁只能限制单个服务实例；分布式锁把锁状态放到所有实例都能访问的 Redis 里。</text>
+</svg>

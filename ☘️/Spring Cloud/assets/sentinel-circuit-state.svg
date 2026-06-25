@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#e7dfd4" flood-opacity="0.9"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="#FEFCF8" rx="24"/>
+<rect x="38" y="28" width="102" height="30" rx="8" fill="#E8C79A" transform="rotate(-16 89 43)" opacity="0.9"/>
+<rect x="98" y="102" width="270" height="16" rx="8" fill="#F5E2A8" opacity="0.85"/>
+<text x="92" y="88" font-size="34" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">Chapter</text>
+<text x="232" y="88" font-size="38" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">熔断状态机</text>
+<text x="92" y="170" font-size="62" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">熔断状态机</text>
+<text x="92" y="226" font-size="28" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">当问题已经不是流量大，而是下游变慢、异常变多时，就要先切断</text>
+<path d="M 70 248 H 1490" stroke="#9B7C4D" stroke-width="3" stroke-dasharray="16 12" fill="none"/>
+<circle cx="1496" cy="84" r="26" fill="#fff" stroke="#2A2724" stroke-width="3"/>
+<circle cx="1486" cy="84" r="3.5" fill="#111111"/>
+<circle cx="1506" cy="84" r="3.5" fill="#111111"/>
+<path d="M1479 96 Q1496 108 1513 96" stroke="#111111" stroke-width="3" fill="none" stroke-linecap="round"/>
+<g filter="url(#shadow)">
+<rect x="100" y="360" width="360" height="360" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="144" cy="404" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="134" y="415" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">1</text>
+<text x="184" y="420" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">CLOSED</text>
+<text x="136" y="470" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">正常放行</text>
+<text x="136" y="508" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">持续统计慢调用、异常比例、异常数</text><g filter="url(#shadow)">
+<rect x="620" y="360" width="360" height="360" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="664" cy="404" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="654" y="415" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">2</text>
+<text x="704" y="420" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">OPEN</text>
+<text x="656" y="470" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">达到阈值后熔断打开</text>
+<text x="656" y="508" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">一段时间内直接走降级逻辑</text><g filter="url(#shadow)">
+<rect x="1140" y="360" width="360" height="360" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="3.2"/>
+</g>
+<circle cx="1184" cy="404" r="28" fill="#fff9eb" stroke="#2A2724" stroke-width="3"/>
+<text x="1174" y="415" font-size="30" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">3</text>
+<text x="1224" y="420" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">HALF-OPEN</text>
+<text x="1176" y="470" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">熔断时间结束后</text>
+<text x="1176" y="508" font-size="24" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">放少量探测请求判断是否恢复</text><path d="M 460 540 C 540.0 540, 540.0 540, 620 540" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 602 530 L 620 540 L 602 550" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="470.0" y="520.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="488.0" y="544.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">达到阈值</text><path d="M 980 540 C 1060.0 540, 1060.0 540, 1140 540" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 1122 530 L 1140 540 L 1122 550" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="990.0" y="520.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="1008.0" y="544.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">放探测请求</text><path d="M 1280 360 C 780.0 360, 780.0 300, 280 300" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 262 290 L 280 300 L 262 310" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="710.0" y="310.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="728.0" y="334.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">探测成功</text><path d="M 1280 720 C 1090.0 720, 1090.0 760, 900 760" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M 882 750 L 900 760 L 882 770" stroke="#2A2724" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="1020.0" y="720.0" width="140" height="34" rx="12" fill="#E5F3EA"/>
+<text x="1038.0" y="744.0" font-size="20" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">探测失败</text><rect x="420" y="820" width="760" height="110" rx="20" fill="#fff" stroke="#2A2724" stroke-width="2.6"/>
+<rect x="438" y="838" width="180" height="34" rx="12" fill="#F5E2A8" opacity="0.72"/>
+<text x="444" y="863" font-size="26" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">推荐记忆</text>
+<text x="444" y="906" font-size="22" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#4A443D">CLOSED 正常统计，OPEN 先切断，HALF-OPEN 试探恢复。</text>
+<g filter="url(#shadow)">
+  <path d="M 530 1000 H 1070 L 1100 1026 L 1070 1054 H 530 L 500 1026 Z" fill="#f7e7b5" stroke="#2A2724" stroke-width="3"/>
+</g>
+<text x="632" y="1038" font-size="34" font-weight="700" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">熔断不是永久关闭，而是一个会恢复的状态机</text>
+<rect x="82" y="958" width="1436" height="130" rx="28" fill="#fffdf9" stroke="#2A2724" stroke-width="2.8" stroke-dasharray="10 10"/>
+<text x="150" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">正常放行</text>
+<path d="M 300 1032 H 390" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 374 1022 L 390 1032 L 374 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="440" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">熔断打开</text>
+<path d="M 590 1032 H 680" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 664 1022 L 680 1032 L 664 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="730" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">半开探测</text>
+<path d="M 880 1032 H 970" stroke="#2A2724" stroke-width="4" fill="none"/>
+<path d="M 954 1022 L 970 1032 L 954 1042" stroke="#2A2724" stroke-width="4" fill="none"/>
+<text x="1020" y="1046" font-size="30" font-family="PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif fill="#111111">恢复或继续熔断</text></svg>

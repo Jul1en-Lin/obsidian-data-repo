@@ -1,0 +1,15 @@
+{
+  "accentColor": "#c46786",
+  "translucency": true,
+  "baseFontSize": 16,
+  "textFontFamily": "",
+  "monospaceFontFamily": "Arial Rounded MT Bold",
+  "showViewHeader": true,
+  "cssTheme": "Minimal",
+  "theme": "system",
+  "nativeMenus": true,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "reading-comfort"
+  ]
+}

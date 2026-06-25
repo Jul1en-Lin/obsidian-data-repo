@@ -1,0 +1,55 @@
+/* @settings
+name: Reading Comfort
+id: reading-comfort
+settings:
+  - id: reading-comfort-section
+    title: Reading Comfort
+    title.zh: 阅读舒适度
+    type: heading
+    level: 1
+    collapsed: false
+  - id: reading-line-height
+    title: Text line height
+    title.zh: 正文行间距
+    description: A comfortable range is usually 1.7 to 1.9.
+    description.zh: 舒适阅读通常在 1.7 到 1.9 之间。
+    type: variable-number-slider
+    default: 1.8
+    min: 1.4
+    max: 2.2
+    step: 0.05
+  - id: reading-paragraph-spacing
+    title: Paragraph spacing
+    title.zh: 段落间距
+    description: Adds a little breathing room between paragraphs and list blocks.
+    description.zh: 给段落和列表块之间留一点呼吸感。
+    type: variable-number-slider
+    default: 0.9
+    min: 0
+    max: 1.6
+    step: 0.05
+    format: rem
+*/
+
+body {
+  --line-height-normal: var(--reading-line-height, 1.8);
+  --p-spacing: var(--reading-paragraph-spacing, 0.9rem);
+}
+
+.markdown-reading-view .markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6 .cm-line {
+  line-height: var(--reading-line-height, 1.8);
+}
+
+.markdown-preview-view p,
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-preview-view blockquote {
+  margin-bottom: var(--reading-paragraph-spacing, 0.9rem);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header,
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.5;
+}
