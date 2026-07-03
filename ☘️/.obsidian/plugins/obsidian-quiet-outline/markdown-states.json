@@ -1,14 +1,14 @@
 {
   "Redis 进阶/集群.md": {
-    "scroll": 54.36010186437764,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 94,
-        "ch": 40
+        "line": 11,
+        "ch": 27
       },
       "to": {
-        "line": 94,
-        "ch": 40
+        "line": 11,
+        "ch": 27
       }
     },
     "expandedKeys": [
@@ -200,7 +200,7 @@
     "expandedKeys": []
   },
   "项目经历/项目经历.md": {
-    "scroll": 0,
+    "scroll": 15.419035906603966,
     "cursor": {
       "from": {
         "line": 9,
@@ -550,15 +550,15 @@
     "expandedKeys": []
   },
   "Redis 进阶/分布式锁.md": {
-    "scroll": 151.80062060497974,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 168,
-        "ch": 68
+        "line": 7,
+        "ch": 2
       },
       "to": {
-        "line": 168,
-        "ch": 68
+        "line": 7,
+        "ch": 2
       }
     },
     "expandedKeys": []
@@ -578,15 +578,15 @@
     "expandedKeys": []
   },
   "AI/Codex 工作流更新-v2.md": {
-    "scroll": 53.237231974209635,
+    "scroll": 70.35783093815029,
     "cursor": {
       "from": {
-        "line": 63,
-        "ch": 97
+        "line": 115,
+        "ch": 0
       },
       "to": {
-        "line": 63,
-        "ch": 97
+        "line": 115,
+        "ch": 0
       }
     },
     "expandedKeys": []
@@ -606,15 +606,15 @@
     "expandedKeys": []
   },
   "Git/命令.md": {
-    "scroll": 187.3503353563827,
+    "scroll": 82.36489929243814,
     "cursor": {
       "from": {
-        "line": 169,
-        "ch": 37
+        "line": 74,
+        "ch": 22
       },
       "to": {
-        "line": 169,
-        "ch": 53
+        "line": 74,
+        "ch": 22
       }
     },
     "expandedKeys": []
@@ -788,15 +788,15 @@
     "expandedKeys": []
   },
   "Spring Cloud/Sentinel.md": {
-    "scroll": 109.7593519315994,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 6,
+        "ch": 2
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 6,
+        "ch": 2
       }
     },
     "expandedKeys": []
@@ -805,25 +805,25 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 6,
-        "ch": 0
+        "line": 12,
+        "ch": 7
       },
       "to": {
-        "line": 6,
-        "ch": 0
+        "line": 12,
+        "ch": 7
       }
     },
     "expandedKeys": []
   },
   "项目经历/项目复习手册.md": {
-    "scroll": 130.0257758328412,
+    "scroll": 595.8109460295577,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 618,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 618,
         "ch": 0
       }
     },
@@ -833,39 +833,39 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 13,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 13,
         "ch": 0
       }
     },
     "expandedKeys": []
   },
   "AI/Codex 工作流更新-v3.md": {
-    "scroll": 22.115892440880156,
+    "scroll": 113.55816843976422,
     "cursor": {
       "from": {
-        "line": 31,
-        "ch": 87
+        "line": 30,
+        "ch": 23
       },
       "to": {
-        "line": 31,
-        "ch": 87
+        "line": 30,
+        "ch": 23
       }
     },
     "expandedKeys": []
   },
   "AI/开发Tips.md": {
-    "scroll": 0,
+    "scroll": 6.198237200536663,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 5,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 5,
         "ch": 0
       }
     },
@@ -886,14 +886,112 @@
     "expandedKeys": []
   },
   "项目经历/Java 脚手架.md": {
-    "scroll": 0,
+    "scroll": 0.9214732565863212,
     "cursor": {
       "from": {
         "line": 9,
-        "ch": 0
+        "ch": 64
       },
       "to": {
         "line": 9,
+        "ch": 64
+      }
+    },
+    "expandedKeys": []
+  },
+  "Spring Cloud/Spring Cloud Config.md": {
+    "scroll": 123.3782270975465,
+    "cursor": {
+      "from": {
+        "line": 159,
+        "ch": 22
+      },
+      "to": {
+        "line": 159,
+        "ch": 22
+      }
+    },
+    "expandedKeys": []
+  },
+  "项目经历/Claude Code haha.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 19,
+        "ch": 0
+      },
+      "to": {
+        "line": 19,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "AI/Codex 工作流更新.md": {
+    "scroll": 294.18692450681743,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 0
+      },
+      "to": {
+        "line": 4,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "项目经历/多设计的抽奖系统项目.md": {
+    "scroll": 50.006058973886496,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "项目经历/AI搜索引擎项目.md": {
+    "scroll": 358.51775289374837,
+    "cursor": {
+      "from": {
+        "line": 290,
+        "ch": 0
+      },
+      "to": {
+        "line": 290,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Docker/未命名.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Docker/NameSpace.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
         "ch": 0
       }
     },

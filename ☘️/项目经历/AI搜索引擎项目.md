@@ -277,7 +277,7 @@ eg：
 - Flat = 暴力搜索，精确但慢（数据量小够用）
 - 数据量大时应该换成 IndexIVF 或 IndexHNSW（近似搜索）
 
-![image](image-20260408235741-hy6qg9n.png)
+
 
 # text2vec-base-chinese
 
@@ -315,7 +315,7 @@ eg：
 
 - CPU降级其实是指“自动降级至CPU”，当GPU不可用时，自动切换到CPU进行计算
 
-![image](项目经历/assets/image-20260410141730-vyiwewo.png)
+
 
 # 复习
 

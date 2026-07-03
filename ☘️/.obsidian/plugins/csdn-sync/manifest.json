@@ -1,0 +1,9 @@
+{
+	"id": "csdn-sync",
+	"name": "CSDN Sync",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Open the current note in the CSDN editor through a Chrome extension.",
+	"author": "Julien Lin",
+	"isDesktopOnly": true
+}

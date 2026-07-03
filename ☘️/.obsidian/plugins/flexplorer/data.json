@@ -1831,7 +1831,6 @@
       "isHidden": false,
       "sortOrder": "custom",
       "customOrder": [
-        "Java 脚手架.md",
         "项目经历.md",
         "assets",
         "AI搜索引擎项目.md",
@@ -1839,7 +1838,8 @@
         "思源飞书数据迁移插件.md",
         "多设计的抽奖系统项目.md",
         "项目复习手册.md",
-        "魔方简历.md"
+        "魔方简历.md",
+        "Java 脚手架.md"
       ]
     },
     "项目经历/AI搜索引擎项目.md": {
@@ -3993,7 +3993,9 @@
       "isPinned": false,
       "isHidden": false,
       "sortOrder": "custom",
-      "customOrder": []
+      "customOrder": [
+        "NameSpace.md"
+      ]
     },
     "AI/Codex 工作流更新-v3.md": {
       "isPinned": false,
@@ -4012,6 +4014,10 @@
       "isHidden": false
     },
     "项目经历/Java 脚手架.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "Docker/NameSpace.md": {
       "isPinned": false,
       "isHidden": false
     }

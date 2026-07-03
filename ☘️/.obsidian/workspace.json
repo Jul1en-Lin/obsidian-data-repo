@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7e92174a929d2787",
+        "id": "fa21d1f8a08c1e53",
         "type": "tabs",
         "children": [
           {
-            "id": "4b501e1b061512cf",
+            "id": "75c608b684bc594f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "项目经历/Java 脚手架.md",
+                "file": "AI/Codex 工作流更新-v3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
-                  "collapseAll": true,
+                  "collapseAll": false,
                   "extraContext": false,
                   "sortOrder": "alphabetical",
                   "showSearch": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Java 脚手架"
+              "title": "Codex 工作流更新-v3"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fastforward",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.50247192382812
+    "width": 223.50247192382812
   },
   "right": {
     "id": "7dfaa60740005b4b",
@@ -137,27 +137,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "项目经历/Java 脚手架.md",
+                "file": "AI/Codex 工作流更新-v3.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Java 脚手架 的大纲"
+              "title": "Codex 工作流更新-v3 的大纲"
             }
           },
           {
-            "id": "4545e3a19c0e539e",
-            "type": "leaf",
-            "state": {
-              "type": "quiet-outline",
-              "state": {},
-              "icon": "lines-of-text",
-              "title": "Quiet Outline"
-            }
-          },
-          {
-            "id": "b79dea8299176c6c",
+            "id": "0015827cef0cbaef",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -172,7 +162,7 @@
             }
           },
           {
-            "id": "4aa8abc11fb09043",
+            "id": "7a53daae815a2d3d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -190,10 +180,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 215.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "csdn-sync:Open current note in csdn editor": false,
       "switcher:打开快速切换": false,
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": true,
@@ -202,19 +193,30 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "4b501e1b061512cf",
+  "active": "75c608b684bc594f",
   "lastOpenFiles": [
-    "AI/Codex 工作流更新-v3.md",
-    "项目经历/Java 脚手架.md",
-    "AI/assets/codex-workflow-v3-long-running-task.png",
-    "AI/开发Tips.md",
+    "AI/AI.md",
     "AI/概念.md",
-    "AI/assets/Pasted image 20260624172044.png",
-    "AI/assets/Pasted image 20260624172022.png",
+    "AI/开发Tips.md",
+    "Git/命令.md",
+    "Docker/NameSpace.md",
+    "项目经历/AI搜索引擎项目.md",
+    "项目经历/项目经历.md",
+    "项目经历/Claude Code haha.md",
+    "AI/Codex 工作流更新-v3.md",
     "AI/Codex 工作流更新-v2.md",
     "项目经历/魔方简历.md",
-    "项目经历/项目复习手册.md",
     "项目经历/多设计的抽奖系统项目.md",
+    "项目经历/Java 脚手架.md",
+    "项目经历/项目复习手册.md",
+    "AI/Codex 工作流更新.md",
+    "Spring Cloud/Spring Cloud Config.md",
+    "Redis 进阶/集群.md",
+    "Redis 进阶/分布式锁.md",
+    "Spring Cloud/Sentinel.md",
+    "AI/assets/codex-workflow-v3-long-running-task.png",
+    "AI/assets/Pasted image 20260624172044.png",
+    "AI/assets/Pasted image 20260624172022.png",
     "Spring Cloud/SkyWalking.md",
     "Docker",
     "Spring Cloud/assets/Pasted image 20260615104956.png",
@@ -225,22 +227,11 @@
     "Spring Cloud/Spring Cloud.md",
     "Spring Cloud/Seata.md",
     "Redis 进阶/缓存.md",
-    "Spring Cloud/Sentinel.md",
     "Spring Cloud/assets/skywalking-overview.svg",
     "Spring Cloud/assets/Pasted image 20260614175442.png",
     "算法/分治-快排_topK问题.md",
     "算法/分治-归并.md",
     "算法/位运算.md",
-    "算法/算法.md",
-    "通信协议/API 类型总结.md",
-    "Spring Cloud/Spring Cloud Config.md",
-    "Spring Cloud/Eureka、Nacos、OpenFeign、Gateway.md",
-    "Redis/单线程模型.md",
-    "Redis 进阶/分布式锁.md",
-    "Git/命令.md",
-    "Git/实际问题.md",
-    "Redis 进阶/集群.md",
-    "JavaEE 初阶/常见的锁策略.md",
     "通信协议/assets/api-types",
     "通信协议",
     "Spring Cloud/assets/api-types",
